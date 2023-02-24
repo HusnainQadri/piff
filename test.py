@@ -4,9 +4,11 @@ This module contains test cases for piff.
 
 from piff import edit_distance, read_entire_file, DiffSubcommand
 
+
 def test_edit_distance():
     """Test edit_distance function"""
     assert not edit_distance([], [])
+
 
 def test_read_entire_file():
     """Test read_entire_file function"""
@@ -15,6 +17,7 @@ def test_read_entire_file():
         assert False, "Exception not raised"
     except FileNotFoundError:
         assert True
+
 
 def test_diff_subcommand():
     """Test DiffSubcommand class"""
